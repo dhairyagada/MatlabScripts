@@ -1,0 +1,9 @@
+a=0
+b=1
+n=50
+h=(b-a)/n
+trueval=exp(1)-2
+x=[a:h:b]
+fvec=(x.^2).*exp(x)
+Int_ans=(h/2)*(fvec(1)+2*(sum(fvec(2:n)))+fvec(n+1))
+Int_err=trueval-Int_ans

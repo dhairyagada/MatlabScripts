@@ -1,0 +1,14 @@
+a=1;ma=1;
+b=1.25;mb=1.25;
+year=1;y=1;
+while(b>a)
+    a=a+0.06.*a;
+    ma=[ma,a];
+    b=b+0.02.*b;
+    mb=[mb,b];
+    y=y+1;
+    year=[year,y];
+end
+disp(ma);
+disp(mb);
+disp(year);
